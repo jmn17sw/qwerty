@@ -3,7 +3,6 @@ header {
 }
 .header1 {
 display: flex;
-flex-direction: row;
 justify-content:left;
 gap:2ch;
 }
@@ -11,6 +10,7 @@ gap:2ch;
 .header2 {
 display: flex;
 justify-content:right;
+align-content:baseline;
 gap:2ch;
 }
 
@@ -18,11 +18,13 @@ body {
   background-color: antiquewhite;
   font-family: arial;
   max-height: 1200px;
-  max-width: fit-content;
+  max-width: 1200px;
+  gap:1ch;
 }
 
-main {
-
+img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 nav {
@@ -30,6 +32,7 @@ nav {
  flex-direction: column;
  color:aqua;
  align-content: flex-start;
+ max-width: 100px;
 }
 
 ul {
@@ -44,16 +47,27 @@ ul {
 .search {
   display:flex;
   justify-content: space-around;
+  padding-top: 3ch;
 }
 
 footer {
   display: flex;
   flex-direction: row;
-  align-content: flex-end;
+  justify-content: space-around;
 }
 
-.page {
+.foot1{
   display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
 }
+
+.foot2 {
+  display:flex;
+  flex-direction: column;
+}
+
+.foot3 {
+  display:flex;
+  flex-direction: column;
+}
+
