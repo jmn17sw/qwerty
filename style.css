@@ -30,9 +30,10 @@ img {
 nav {
  display: flex;
  flex-direction: column;
- color:aqua;
+ color:blue;
  align-content: flex-start;
  max-width: 100px;
+ background-color: wheat;
 }
 
 ul {
