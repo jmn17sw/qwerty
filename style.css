@@ -23,12 +23,15 @@ width: 500px;
 
 .products {
   display: grid;
-
-
+  min-height: 300px;
+  grid-template-columns: 4;
+  grid-template-rows: 4;
+  align-content: center;
 }
 
 .description {
-
+display:flex;
+font-family: Courier;
 }
 
 .search {
